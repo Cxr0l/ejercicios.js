@@ -9,7 +9,7 @@ for (let number1 = 0; number1 < 20; number1++) {
 //otra forma
 
 const number2 = [1, 2, 3, 4, 5];
-const iterador1 = number2[Symbol.iterator1]();
+const iterador1 = number2[Symbol.iterator]();
 
 for (const elemento1 of iterador1) {
   console.log(elemento1);
