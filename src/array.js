@@ -1,5 +1,15 @@
 //1- Agregar valores al array al principio ("hola" "Soy" "Juan")
 
+
+const array1 = ["Me", "Llamo", "Vanessa"];
+
+array1.unshift("Hola", "Mundo", "Tierra", "Verde");
+
+console.log(array1);
+
+
+//Otra forma
+
 function agregarValorInvertido(valores1) {
   let valor1 = prompt("Escribe una palabra"); 
   if (valor1 === null) { 
@@ -15,7 +25,18 @@ let valores1 = agregarValorInvertido([]);
 console.log("Valores finales: " + valores1.join(' '));
 
 
+
+
 //2- Revertir los valores que tenga el array (1,2,3) (3,2,1)
+
+const array2 = [20, 30, 40, 50, 60];
+console.log (array2);
+
+const revertir = array2.reverse();
+console.log (revertir);
+
+
+//Otra forma
 
 function invertirValor() {
   let valor2 = prompt("Escribe varias palabras:");
@@ -27,7 +48,20 @@ function invertirValor() {
 let palabrasInvertidas = invertirValor();
 console.log("Palabras invertidas: " + palabrasInvertidas.join(" "));
 
+
+
+
 // 3- Sumar todos los numeros del array
+
+const array3 = [1, 2, 3, 4, 5]
+
+const total = array3.reduce((a, b) => a + b, 0);
+
+console.log(total);
+
+
+
+//Otra forma
 
 function sumarValores() {
   let valores3 = prompt("Escribe varios valores separados por comas"); 
@@ -38,12 +72,3 @@ function sumarValores() {
 
 let suma = sumarValores();
 console.log("Suma de valores: " + suma);
-
-
-//Otra forma
-
-const array = [1, 2, 3, 4, 5]
-
-const total = array.reduce((a, b) => a + b, 0);
-
-console.log(total);
